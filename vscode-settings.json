@@ -1,0 +1,150 @@
+{
+  // ---------------------------------------------------------------------------
+  // BIOME (https://bit.ly/4k3iLzn)---------------------------------------------
+  // ---------------------------------------------------------------------------
+
+  "biome.enabled": true,
+  "editor.defaultFormatter": "biomejs.biome",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.biome": "explicit",
+    "source.organizeImports.biome": "explicit",
+  },
+
+  // ---------------------------------------------------------------------------
+  // JAVASCRIPT / TYPESCRIPT ---------------------------------------------------
+  // ---------------------------------------------------------------------------
+
+  "javascript.preferGoToSourceDefinition": true,
+  // "javascript.referencesCodeLens.showOnAllFunctions": true, // Shows # of references to functions & variables.
+  "javascript.referencesCodeLens.enabled": true,
+  "javascript.suggest.completeJSDocs": false,
+  "javascript.suggest.jsdoc.generateReturns": false,
+  "typescript.preferGoToSourceDefinition": true,
+  // "typescript.referencesCodeLens.showOnAllFunctions": true, // Shows # of references to functions & variables.
+  "typescript.referencesCodeLens.enabled": true,
+  "typescript.suggest.completeJSDocs": false,
+  "typescript.suggest.jsdoc.generateReturns": false,
+  "typescript.tsserver.maxTsServerMemory": 4096,
+  "typescript.preferences.importModuleSpecifier": "relative",
+  // "typescript.tsserver.experimental.enableProjectDiagnostics": true,
+
+  // ---------------------------------------------------------------------------
+  // JSON / JSONC --------------------------------------------------------------
+  // ---------------------------------------------------------------------------
+
+  "[jsonc][json]": {
+    "editor.defaultFormatter": "biomejs.biome",
+  },
+
+  // ---------------------------------------------------------------------------
+  // MARDOWN (https://bit.ly/43Bv7J7 - formats tables) -------------------------
+  // ---------------------------------------------------------------------------
+
+  "[markdown]": {
+    "editor.defaultFormatter": "fcrespo82.markdown-table-formatter",
+    "editor.formatOnSave": true,
+    "editor.unicodeHighlight.ambiguousCharacters": true,
+    "editor.unicodeHighlight.invisibleCharacters": true,
+    "editor.wordWrap": "off",
+  },
+
+  // ---------------------------------------------------------------------------
+  // TAILWIND (https://bit.ly/3E1mNW9) -----------------------------------------
+  // ---------------------------------------------------------------------------
+
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "editor.quickSuggestions": {
+    "strings": "on"
+  },
+  "tailwindCSS.emmetCompletions": true,
+  "tailwindCSS.classAttributes": [
+    "class",
+    "className",
+    "containerCls",
+    "labelClassName"
+  ],
+  "tailwindCSS.classFunctions": [ "tw", "clsx" ],
+  "tailwindCSS.experimental.classRegex": [ "clsx\\(([^)]*)\\)" ],
+
+  // ---------------------------------------------------------------------------
+  // PROJECT MANAGER (https://bit.ly/3DVUHLO) ----------------------------------
+  // ---------------------------------------------------------------------------
+
+  "projectManager.showProjectNameInStatusBar": true,
+  "projectManager.sortList": "Name",
+  "projectManager.cacheProjectsBetweenSessions": false,
+  "projectManager.any.maxDepthRecursion": 1,
+  "projectManager.any.baseFolders": [ "/Users/qodesmith/repos" ],
+  "projectManager.any.ignoredFolders": [ "node_modules", "typings", "out" ],
+
+  // ---------------------------------------------------------------------------
+  // GIT LENS (https://bit.ly/3Xmz2U6) -----------------------------------------
+  // ---------------------------------------------------------------------------
+
+  "gitlens.fileAnnotations.command": "blame",
+  "gitlens.advanced.messages": {
+    "suppressIntegrationRequestTimedOutWarning": true
+  },
+
+  // ---------------------------------------------------------------------------
+  // TODO TREE (https://bit.ly/3DZlQgQ) ----------------------------------------
+  // ---------------------------------------------------------------------------
+
+  "todo-tree.general.showActivityBarBadge": true,
+
+  // ---------------------------------------------------------------------------
+  // LIVE SERVER (https://bit.ly/4klgkb8) --------------------------------------
+  // ---------------------------------------------------------------------------
+
+  "liveServer.settings.donotShowInfoMsg": true,
+
+  // ---------------------------------------------------------------------------
+  // VS CODE -------------------------------------------------------------------
+  // ---------------------------------------------------------------------------
+
+  "telemetry.telemetryLevel": "off", // Disable sending data to Microsoft.
+
+  "editor.tabSize": 2,
+  "editor.codeLens": false, // Hides the "3 references" link above functions and variables.
+  "editor.linkedEditing": true,
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "editor.inlineSuggest.enabled": true,
+  "editor.stickyScroll.enabled": true,
+  "editor.rulers": [ // Manually added, not found in the settings UI.
+    { "column": 80, "color": "#00ffff09" },
+    { "column": 100, "color": "#00ffff09" }
+  ],
+
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "files.watcherExclude": {
+    "**/routeTree.gen.ts": true // Tanstack generated route file.
+  },
+
+  "workbench.colorTheme": "Outrun Night Meets Synthwave",
+  "workbench.tree.indent": 13,
+  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.tree.enableStickyScroll": true,
+
+  "window.title": "${activeEditorMedium}${separator}${folderName}",
+
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.enableMultiLinePasteWarning": "never",
+
+  "vscode_custom_css.imports": [
+    "file:///Users/qodesmith/.vscode/extensions/codevars.outrun-meets-synthwave-0.0.1/synthWaveStyles.css"
+  ],
+  "diffEditor.ignoreTrimWhitespace": false,
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false,
+  },
+
+  "security.promptForLocalFileProtocolHandling": false,
+}
